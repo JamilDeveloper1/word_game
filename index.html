@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+
+  <div class="hint_container">
+    <div class="hint_div">
+      <i class="fa-regular fa-circle-xmark"></i>
+      <div class="hint_text"></div>
+    </div>
+  </div>
+
+
+  <div class="info">
+    <div class="info_div">
+      <i class="fas fa-times" id="closeInfo" ></i>
+      <div class="info_text">
+        <h2>How To Play?</h2>
+        <ul>
+          <li>Click the start button to begin</li>
+          <li>Find as many words as you can</li>
+          <li>You have only 30 seconds for each word</li>
+          <li>If you want to change the word, click the "Next Word" button</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <h1>Word Game</h1>
+    <div class="word_top">
+      <div class="time">Time: <span class="timeSpan">30</span></div>
+      <div class="score">Score: 0</div>
+      <button class="startBtn">Start</button>
+    </div>
+
+    <div class="word_container">
+      <div class="how">?</div>
+      <div class="show_word">
+
+      </div>
+
+      <div class="word_btns">
+        <button class="nextWord">Next Word</button>
+        <button class="showHint" >Hint...</button>
+      </div>
+    </div>
+
+    <div class="letters">
+      <div class="letters_grid">
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+  <script>
+
+    document.querySelector(".fa-times").addEventListener("click" , () =>{
+      document.querySelector(".info").style.transform = 'scale(0)'; 
+    })
+
+  </script>
+</body>
+</html>

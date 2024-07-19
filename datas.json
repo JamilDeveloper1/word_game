@@ -1,0 +1,7 @@
+[
+    { "id": 1, "name": "elephant", "hint": "The largest land animal" },
+    { "id": 2, "name": "ocean", "hint": "A large body of salt water" },
+    { "id": 3, "name": "apple", "hint": "A fruit that keeps the doctor away" },
+    { "id": 4, "name": "giraffe", "hint": "An animal with a long neck" },
+    { "id": 5, "name": "computer", "hint": "A machine used for calculations and tasks" }
+]
